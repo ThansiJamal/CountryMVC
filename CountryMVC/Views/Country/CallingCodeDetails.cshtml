@@ -1,0 +1,22 @@
+﻿@model CountryMVC.Models.Country
+@{
+    ViewBag.Title = "CallingCodeDetails";
+}
+
+<h2>Calling Code Details</h2>
+
+<label>Name: </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Model.name
+    <br />
+    <label>Capital: </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Model.capital
+    <br />
+    <label>CallingCode: </label>
+    &nbsp;@Model.callingCodes
+    <br />
+    <label>Population: </label>
+    &nbsp;&nbsp;@Model.population
+    <br />
+    <div style="text-align:center">
+        @Html.ActionLink("Get Another", "GetCallingCode", "Country", new { @class = "btn-btn-primary" })
+    </div>

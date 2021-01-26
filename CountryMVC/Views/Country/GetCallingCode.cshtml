@@ -1,0 +1,22 @@
+﻿@model CountryMVC.Models.Country
+@{
+    ViewBag.Title = "GetCallingCode";
+}
+<center>
+<h2>Get Calling Code</h2>
+@using (Html.BeginForm("GetCallingCode", "Country"))
+{<label>Enter Country Calling code:</label>
+    @Html.TextBoxFor(m => m.callingCodes, new { placeholder = "Eg: 91", @class = "form-control" })
+    <br />
+    <div>
+        <input type="submit" value="Show Data" class="btn btn-primary" />
+
+    </div>
+}
+</center>
+
+
+
+
+
+
